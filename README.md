@@ -3,7 +3,7 @@ Installation
 
 Weechat must be built with the ruby option enabled, if using homebrew:
 
-    $ brew install weechat --ruby
+    $ brew install weechat --with-ruby
     
 Install terminal-notifier or ruby_gntp:    
     
