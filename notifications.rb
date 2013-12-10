@@ -70,7 +70,7 @@ end
 def show_notification(title, message, sticky)
   case @notifier_gem 
   when "terminal-notifier"
-    TerminalNotifier.notify(message, { :title  => title, :activate => "com.apple.Terminal" })
+    TerminalNotifier.notify(message, { :title  => title, :activate => "com.apple.Terminal", :sender => "com.apple.Terminal" })
   when "ruby_gntp"
     @growl.notify({
       :name   => name,
